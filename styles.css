@@ -1,4 +1,4 @@
-  /* Color tokens: exactly 5 colors */
+/* Color tokens: exactly 5 colors */
     :root {
       --color-primary: #0b5fff; /* brand blue */
       --color-bg: #f8fafc; /* light background */
@@ -17,6 +17,12 @@
       --surface: #ffffff;
       --border: color-mix(in oklab, var(--color-muted), white 70%);
       --muted: var(--color-muted);
+      --bsr-panel: #ffffff;
+      --bsr-border: rgba(15, 23, 42, 0.06);
+      --bsr-inactive-text: #374151; /* slate-700 */
+      --bsr-active-grad-start: #1e40af; /* indigo-800 */
+      --bsr-active-grad-end: #2563eb; /* indigo-600 */
+      --bsr-shadow: 0 8px 20px rgba(2,6,23,0.06);
     }
 
     html[data-theme="dark"] {
@@ -26,6 +32,12 @@
       --surface: #0f1428;
       --border: color-mix(in oklab, var(--color-muted), black 60%);
       --muted: color-mix(in oklab, var(--color-muted), white 20%);
+      --bsr-panel: #0b1220;
+      --bsr-border: rgba(255,255,255,0.06);
+      --bsr-inactive-text: #cbd5e1; /* slate-300 */
+      --bsr-active-grad-start: #11266b; /* deeper indigo */
+      --bsr-active-grad-end: #1e3a8a;
+      --bsr-shadow: 0 8px 20px rgba(2,6,23,0.45);
     }
 
     /* Base */
@@ -210,6 +222,12 @@
       }
     }
 
+    /* hide gallery sections when toggled off */
+    .gallery.hidden {
+      display: none !important;
+      visibility: hidden;
+    }
+
     .card {
       background: var(--surface);
       border: 2px solid color-mix(in oklab, var(--color-primary), var(--surface) 75%);
@@ -259,6 +277,66 @@
       font-size: 0.75rem; /* Further reduced from 0.75rem to make text smaller */
       color: var(--muted);
     }
+
+    /* BSR toggle (Certificate / LOR) */
+    .bsr-toggle {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0.9rem 0 0.6rem;
+      width: 100%;
+    }
+
+    .bsr-btns {
+      display: inline-flex;
+      gap: 6px;
+      padding: 6px;
+      border-radius: 999px;
+      background: color-mix(in oklab, var(--surface), var(--muted) 88%);
+      box-shadow: 0 8px 20px rgba(2,6,23,0.06);
+      border: 1px solid color-mix(in oklab, var(--muted), transparent 85%);
+    }
+
+    .bsr-btn {
+      appearance: none;
+      -webkit-appearance: none;
+      border: none;
+      background: transparent;
+      color: var(--muted);
+      font-weight: 800;
+      letter-spacing: 0.6px;
+      padding: 10px 22px;
+      border-radius: 999px;
+      cursor: pointer;
+      transition: all 180ms ease;
+      box-shadow: none;
+      font-size: 0.88rem;
+      text-align: center;
+      line-height: 1;
+    }
+
+    .bsr-btn:focus {
+      outline: none;
+      box-shadow: 0 0 0 3px color-mix(in oklab, var(--color-primary), white 70%);
+    }
+
+    /* active style matches provided image: rounded pill with gradient and soft shadow */
+    .bsr-btn.active,
+    .bsr-btn[aria-selected="true"] {
+      color: white;
+      background: linear-gradient(180deg, color-mix(in oklab, var(--color-primary), #3a78ff 6%), var(--color-primary));
+      box-shadow: 0 8px 22px rgba(11,95,255,0.18), 0 2px 6px rgba(0,0,0,0.06);
+      transform: translateY(-2px);
+    }
+
+    /* invert order on small screens if needed, keep compact */
+    @media (max-width: 520px) {
+      .bsr-btns { padding: 4px; gap: 6px; }
+      .bsr-btn { padding: 8px 14px; font-size: 0.82rem; }
+    }
+
+    /* optional body attribute so you can style gallery per view */
+    :root[data-view="lor"] .card { opacity: 0.9; } /* example hook - adapt as needed */
 
     /* Modal */
     .modal {
@@ -440,4 +518,97 @@
     @media (max-width: 640px) {
       .site-footer { font-size: 0.85rem; padding: 0.75rem 0; }
       .site-footer-inner { padding: 0 0.75rem; }
+    }
+
+    /* Theme-specific vars for the BSR toggle */
+    html[data-theme="light"] {
+      --bsr-panel: #ffffff;
+      --bsr-border: rgba(15, 23, 42, 0.06);
+      --bsr-inactive-text: #374151; /* slate-700 */
+      --bsr-active-grad-start: #1e40af; /* indigo-800 */
+      --bsr-active-grad-end: #2563eb; /* indigo-600 */
+      --bsr-shadow: 0 8px 20px rgba(2,6,23,0.06);
+    }
+
+    html[data-theme="dark"] {
+      --bsr-panel: #0b1220;
+      --bsr-border: rgba(255,255,255,0.06);
+      --bsr-inactive-text: #cbd5e1; /* slate-300 */
+      --bsr-active-grad-start: #11266b; /* deeper indigo */
+      --bsr-active-grad-end: #1e3a8a;
+      --bsr-shadow: 0 8px 20px rgba(2,6,23,0.45);
+    }
+
+    /* BSR toggle container */
+    .bsr-toggle {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0.9rem 0 0.6rem;
+      width: 100%;
+    }
+
+    /* pill background that adapts to theme */
+    .bsr-btns {
+      display: inline-flex;
+      gap: 6px;
+      padding: 6px;
+      border-radius: 999px;
+      background: var(--bsr-panel);
+      border: 1px solid var(--bsr-border);
+      box-shadow: var(--bsr-shadow);
+      -webkit-backdrop-filter: blur(6px);
+      backdrop-filter: blur(6px);
+      transition: background-color 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+    }
+
+    /* buttons inside pill */
+    .bsr-btn {
+      appearance: none;
+      -webkit-appearance: none;
+      border: none;
+      background: transparent;
+      color: var(--bsr-inactive-text);
+      font-weight: 800;
+      letter-spacing: 0.6px;
+      padding: 10px 22px;
+      border-radius: 999px;
+      cursor: pointer;
+      transition: color 160ms ease, transform 160ms ease, box-shadow 160ms ease, background 160ms ease;
+      font-size: 0.9rem;
+      text-align: center;
+      line-height: 1;
+      white-space: nowrap;
+    }
+
+    /* focus accessible outline */
+    .bsr-btn:focus {
+      outline: none;
+      box-shadow: 0 0 0 3px rgba(37,99,235,0.12);
+    }
+
+    /* Active style (visible text on active pill) */
+    .bsr-btn.active,
+    .bsr-btn[aria-selected="true"] {
+      color: #ffffff;
+      background: linear-gradient(180deg, var(--bsr-active-grad-start), var(--bsr-active-grad-end));
+      box-shadow: 0 10px 30px rgba(37,99,235,0.18);
+      transform: translateY(-2px);
+    }
+
+    /* Hover for non-active buttons: slightly darker/lighter depending on theme */
+    html[data-theme="light"] .bsr-btn:not(.active):hover {
+      background: rgba(15,23,42,0.03);
+      color: #111827;
+    }
+
+    html[data-theme="dark"] .bsr-btn:not(.active):hover {
+      background: rgba(255,255,255,0.03);
+      color: #f8fafc;
+    }
+
+    /* compact adjustments for small screens */
+    @media (max-width: 520px) {
+      .bsr-btns { padding: 4px; gap: 6px; }
+      .bsr-btn { padding: 8px 14px; font-size: 0.82rem; }
     }
