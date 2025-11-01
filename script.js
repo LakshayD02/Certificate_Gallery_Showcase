@@ -111,3 +111,54 @@
     /* silent */
   }
 })()
+
+// BSR toggle behaviour (Certificate / LOR)
+;(function () {
+  const btns = document.querySelectorAll('.bsr-btn')
+  const root = document.documentElement
+  const storageKey = 'bsr-view'
+
+  const certGallery = document.getElementById('gallery-certificate')
+  const lorGallery = document.getElementById('gallery-lor')
+
+  function setView(view) {
+    // update active states
+    btns.forEach(b => {
+      const is = b.dataset.view === view
+      b.classList.toggle('active', is)
+      b.setAttribute('aria-selected', is ? 'true' : 'false')
+    })
+    // expose current view on root for CSS hooks or JS
+    root.setAttribute('data-view', view)
+    localStorage.setItem(storageKey, view)
+
+    // show/hide galleries
+    if (certGallery && lorGallery) {
+      if (view === 'certificate') {
+        certGallery.classList.remove('hidden')
+        certGallery.setAttribute('aria-hidden', 'false')
+        lorGallery.classList.add('hidden')
+        lorGallery.setAttribute('aria-hidden', 'true')
+      } else {
+        lorGallery.classList.remove('hidden')
+        lorGallery.setAttribute('aria-hidden', 'false')
+        certGallery.classList.add('hidden')
+        certGallery.setAttribute('aria-hidden', 'true')
+      }
+    }
+  }
+
+  // init from storage or default to certificate
+  const initial = localStorage.getItem(storageKey) || 'certificate'
+  setView(initial)
+
+  btns.forEach(btn => {
+    btn.addEventListener('click', () => setView(btn.dataset.view))
+    btn.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault()
+        setView(btn.dataset.view)
+      }
+    })
+  })
+})()
