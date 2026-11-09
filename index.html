@@ -1,63 +1,181 @@
 <!doctype html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="dark">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Certificates Gallery</title>
+  <title>Lakshay Dhoundiyal | Professional Credentials & LOR Showcase</title>
+  <meta name="description"
+    content="Central Repository of Professional Certifications, Cybersecurity Accreditations, and Letters of Recommendation by Lakshay Dhoundiyal." />
+  <meta name="author" content="Lakshay Dhoundiyal" />
+  <meta name="theme-color" content="#080c14" />
 
-  <link rel="icon" type="image/svg+xml" 
-    href="data:image/svg+xml,
-    %3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E
-    %3Crect width='100' height='100' fill='%231F2E3D'/%3E
-    %3Ctext x='50' y='65' font-size='60' text-anchor='middle' fill='white' font-family='Arial, sans-serif'%3EL%3C/text%3E
-    %3C/svg%3E">
-  
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%236366f1'/%3E%3Cstop offset='100%25' stop-color='%2306b6d4'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='24' fill='url(%23g)'/%3E%3Ctext x='50' y='67' font-size='54' font-weight='800' text-anchor='middle' fill='white' font-family='sans-serif'%3ELD%3C/text%3E%3C/svg%3E">
+
+  <!-- Modern Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap"
+    rel="stylesheet">
+
   <link rel="stylesheet" href="styles.css">
-
-  <link rel="preconnect" href="." crossorigin>
-  <link rel="dns-prefetch" href=".">
 </head>
+
 <body>
-  <div class="container">
-    <header class="site-header" aria-label="Site header">
-      <h1 class="title">Certificates <span class="accent">Gallery</span></h1>
-      <div class="controls">
-        <label class="switch-wrap" title="Toggle theme">
-          <input
-            id="themeSwitch"
-            class="switch-input"
-            type="checkbox"
-            role="switch"
-            aria-checked="false"
-            aria-label="Toggle color theme"
-          />
-          <span class="switch" aria-hidden="true">
-            <span class="switch-knob"></span>
-          </span>
-        </label>
+  <div class="app-wrapper">
+    <!-- Sticky Glass Navbar -->
+    <header class="site-navbar" role="banner">
+      <div class="container nav-container">
+        <div class="brand-wrapper">
+          <div class="brand-emblem" aria-hidden="true">LD</div>
+          <div class="brand-text">
+            <span class="brand-name">Lakshay Dhoundiyal</span>
+            <span class="brand-role">
+              <span class="status-dot"></span>
+              Verified Portfolio &amp; Credentials
+            </span>
+          </div>
+        </div>
+
+        <div class="nav-actions">
+          <button id="themeToggleBtn" class="theme-toggle-btn" type="button" aria-label="Toggle color theme">
+            <!-- Sun Icon (shown in dark theme) -->
+            <svg class="theme-icon sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <!-- Moon Icon (shown in light theme) -->
+            <svg class="theme-icon moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </button>
+        </div>
       </div>
     </header>
 
-    <main aria-label="Certificates gallery">
-      <p class="intro">
-         Central Repository of my Professional Certifications & LOR.
-      </p>
-
-      <!-- BSR toggle moved below the description -->
-      <div class="bsr-toggle" role="tablist" aria-label="Select content type">
-        <div class="bsr-btns" role="presentation">
-          <button class="bsr-btn active" role="tab" aria-selected="true" data-view="certificate">CERTIFICATE</button>
-          <button class="bsr-btn" role="tab" aria-selected="false" data-view="lor">LOR</button>
+    <main id="main-content" class="container" role="main">
+      <!-- Modern Hero Section -->
+      <section class="hero-section" aria-label="Introduction">
+        <div class="hero-pill-badge">
+          <span>✦</span> Official Credentials &amp; Endorsements Repository
         </div>
+        <h1 class="hero-title">
+          <span class="gradient-text">Lakshay Dhoundiyal</span>
+        </h1>
+        <p class="hero-desc">
+          Central Repository of Professional Certifications &amp; Letters of Recommendation
+        </p>
+
+        <!-- KPI / Metric Highlights -->
+        <div class="stats-grid" aria-label="Key statistics">
+          <div class="stat-card">
+            <div class="stat-icon sec">🛡️</div>
+            <div class="stat-info">
+              <span class="stat-value">36+</span>
+              <span class="stat-label">Cybersecurity &amp; Red Team</span>
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon cloud">☁️</div>
+            <div class="stat-info">
+              <span class="stat-value">5+</span>
+              <span class="stat-label">Cloud &amp; DevOps (Oracle, AWS)</span>
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon dev">💻</div>
+            <div class="stat-info">
+              <span class="stat-value">40+</span>
+              <span class="stat-label">Software, AI &amp; Algorithms</span>
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon lor">📜</div>
+            <div class="stat-info">
+              <span class="stat-value">20</span>
+              <span class="stat-label">Letters of Recommendation</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Interactive Controls Hub (Sticky Filter & Search) -->
+      <div class="controls-hub" role="region" aria-label="Filter and search controls">
+        <div class="controls-row">
+          <!-- View Switcher -->
+          <div class="view-tabs" role="tablist" aria-label="Select credential type">
+            <button class="view-tab-btn active" role="tab" aria-selected="true" data-view="certificate">
+              <span>🏅 CERTIFICATES</span>
+              <span class="tab-badge">84</span>
+            </button>
+            <button class="view-tab-btn" role="tab" aria-selected="false" data-view="lor">
+              <span>📜 LOR</span>
+              <span class="tab-badge">20</span>
+            </button>
+          </div>
+
+          <!-- Instant Search Box -->
+          <div class="search-box-wrapper" role="search">
+            <svg class="search-icon-left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input id="searchInput" class="search-input-field" type="text"
+              placeholder="Search by title, issuer, or keyword (Press '/' to search)..." aria-label="Search credentials"
+              autocomplete="off" spellcheck="false" />
+            <button id="searchClearBtn" class="search-clear-btn" type="button" aria-label="Clear search">×</button>
+          </div>
+        </div>
+
+        <!-- Dynamic Category Chips -->
+        <nav id="categoryFilterBar" class="category-filter-bar" aria-label="Filter by category">
+          <!-- Populated by JavaScript with active filters -->
+        </nav>
       </div>
 
-      <!-- Certificates gallery - organized by company -->
+      <!-- Results Count & Summary Bar -->
+      <div class="results-summary" aria-live="polite">
+        <span id="resultsCount">Showing <strong>84</strong> of <strong>84</strong> certificates</span>
+        <button id="resetFiltersBtn" class="clear-search-link" type="button" style="background:none;border:none;">Reset
+          filters</button>
+      </div>
+
+      <!-- Empty State View (Shown when 0 results match) -->
+      <div id="emptyState" class="empty-state" role="status" aria-live="polite">
+        <div class="empty-state-icon">🔍</div>
+        <h3 class="empty-state-title">No matching credentials found</h3>
+        <p class="empty-state-desc">We couldn't find anything matching your search. Try searching for other terms like
+          "SecOps", "Oracle", "Python", "Cloud", or reset the active filters.</p>
+        <button type="button" class="reset-search-btn" onclick="document.getElementById('resetFiltersBtn').click()">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="1 4 1 10 7 10"></polyline>
+            <path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"></path>
+          </svg>
+          Reset All Filters
+        </button>
+      </div>
+
       <section class="gallery" id="gallery-certificate">
 
         <!-- ========== The SecOps Group Certificates (together) ========== -->
-        <article class="card" tabindex="0" data-title="Certified Social Engineering Defense Practitioner (CSEDP)" data-issuer="The SecOps Group">
+        <article class="card" tabindex="0" data-title="Certified Social Engineering Defense Practitioner (CSEDP)"
+          data-issuer="The SecOps Group">
           <figure class="card-figure">
-            <img class="card-img" loading="lazy" width="300" height="200" alt="Certified Social Engineering Defense Practitioner (CSEDP) preview"
+            <img class="card-img" loading="lazy" width="300" height="200"
+              alt="Certified Social Engineering Defense Practitioner (CSEDP) preview"
               src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Crect width='300' height='200' fill='%23f0f0f0'/%3E%3C/svg%3E"
               data-src="./images/72.jpg" />
           </figure>
@@ -67,9 +185,12 @@
           </div>
         </article>
 
-        <article class="card" tabindex="0" data-title="Certified Social Engineering Defense Practitioner (CSEDP) with Merit" data-issuer="The SecOps Group">
+        <article class="card" tabindex="0"
+          data-title="Certified Social Engineering Defense Practitioner (CSEDP) with Merit"
+          data-issuer="The SecOps Group">
           <figure class="card-figure">
-            <img class="card-img" loading="lazy" width="300" height="200" alt="Certified Social Engineering Defense Practitioner (CSEDP) with Merit preview"
+            <img class="card-img" loading="lazy" width="300" height="200"
+              alt="Certified Social Engineering Defense Practitioner (CSEDP) with Merit preview"
               src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Crect width='300' height='200' fill='%23f0f0f0'/%3E%3C/svg%3E"
               data-src="./images/78.jpg" />
           </figure>
@@ -79,9 +200,11 @@
           </div>
         </article>
 
-        <article class="card" tabindex="0" data-title="Certified Blue Team Practitioner (CBTP)" data-issuer="The SecOps Group">
+        <article class="card" tabindex="0" data-title="Certified Blue Team Practitioner (CBTP)"
+          data-issuer="The SecOps Group">
           <figure class="card-figure">
-            <img class="card-img" loading="lazy" width="300" height="200" alt="Certified Blue Team Practitioner (CBTP) with Merit preview"
+            <img class="card-img" loading="lazy" width="300" height="200"
+              alt="Certified Blue Team Practitioner (CBTP) with Merit preview"
               src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Crect width='300' height='200' fill='%23f0f0f0'/%3E%3C/svg%3E"
               data-src="./images/73.jpg" />
           </figure>
@@ -91,9 +214,11 @@
           </div>
         </article>
 
-        <article class="card" tabindex="0" data-title="Certified Cloud Security Practitioner" data-issuer="The SecOps Group">
+        <article class="card" tabindex="0" data-title="Certified Cloud Security Practitioner"
+          data-issuer="The SecOps Group">
           <figure class="card-figure">
-            <img class="card-img" loading="lazy" width="300" height="200" alt="Certified Cloud Security Practitioner preview"
+            <img class="card-img" loading="lazy" width="300" height="200"
+              alt="Certified Cloud Security Practitioner preview"
               src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Crect width='300' height='200' fill='%23f0f0f0'/%3E%3C/svg%3E"
               data-src="./images/71.jpg" />
           </figure>
@@ -103,9 +228,11 @@
           </div>
         </article>
 
-        <article class="card" tabindex="0" data-title="Certified Network Security Practitioner (CNSP)" data-issuer="The SecOps Group">
+        <article class="card" tabindex="0" data-title="Certified Network Security Practitioner (CNSP)"
+          data-issuer="The SecOps Group">
           <figure class="card-figure">
-            <img class="card-img" loading="lazy" width="300" height="200" alt="Certified Network Security Practitioner (CNSP) preview"
+            <img class="card-img" loading="lazy" width="300" height="200"
+              alt="Certified Network Security Practitioner (CNSP) preview"
               src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Crect width='300' height='200' fill='%23f0f0f0'/%3E%3C/svg%3E"
               data-src="./images/23.jpg" />
           </figure>
@@ -115,9 +242,11 @@
           </div>
         </article>
 
-        <article class="card" tabindex="0" data-title="Certified Appsec Practitioner V2 (CAP)" data-issuer="The SecOps Group">
+        <article class="card" tabindex="0" data-title="Certified Appsec Practitioner V2 (CAP)"
+          data-issuer="The SecOps Group">
           <figure class="card-figure">
-            <img class="card-img" loading="lazy" width="300" height="200" alt="Certified Appsec Practitioner V2 (CAP) preview"
+            <img class="card-img" loading="lazy" width="300" height="200"
+              alt="Certified Appsec Practitioner V2 (CAP) preview"
               src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Crect width='300' height='200' fill='%23f0f0f0'/%3E%3C/svg%3E"
               data-src="./images/24.jpg" />
           </figure>
@@ -166,7 +295,8 @@
         </article>
 
         <!-- ========== Infosys Springboard ========== -->
-        <article class="card" tabindex="0" data-title="TechA Data Analytics using Power BI Foundation Certication" data-issuer="Infosys Springboard">
+        <article class="card" tabindex="0" data-title="TechA Data Analytics using Power BI Foundation Certication"
+          data-issuer="Infosys Springboard">
           <figure class="card-figure">
             <img class="card-img" loading="lazy" width="300" height="200" alt="Infosys Springboard"
               src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Crect width='300' height='200' fill='%23f0f0f0'/%3E%3C/svg%3E"
@@ -205,7 +335,8 @@
 
         <article class="card" tabindex="0" data-title="Foundation of Cybersecurity" data-issuer="Coursera">
           <figure class="card-figure">
-            <img class="card-img" loading="lazy" width="300" height="200" alt="Foundation of Cybersecurity certificate preview"
+            <img class="card-img" loading="lazy" width="300" height="200"
+              alt="Foundation of Cybersecurity certificate preview"
               src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Crect width='300' height='200' fill='%23f0f0f0'/%3E%3C/svg%3E"
               data-src="./images/8.jpg" />
           </figure>
@@ -215,9 +346,11 @@
           </div>
         </article>
 
-        <article class="card" tabindex="0" data-title="Introduction to Ethical Hacking and Recon Techniques" data-issuer="Coursera">
+        <article class="card" tabindex="0" data-title="Introduction to Ethical Hacking and Recon Techniques"
+          data-issuer="Coursera">
           <figure class="card-figure">
-            <img class="card-img" loading="lazy" width="300" height="200" alt="Introduction to Ethical Hacking and Recon Techniques preview"
+            <img class="card-img" loading="lazy" width="300" height="200"
+              alt="Introduction to Ethical Hacking and Recon Techniques preview"
               src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Crect width='300' height='200' fill='%23f0f0f0'/%3E%3C/svg%3E"
               data-src="./images/12.jpg" />
           </figure>
@@ -277,7 +410,8 @@
 
         <article class="card" tabindex="0" data-title="Automate Cybersecurity Tasks with Python" data-issuer="Coursera">
           <figure class="card-figure">
-            <img class="card-img" loading="lazy" width="300" height="200" alt="Automate Cybersecurity Tasks with Python preview"
+            <img class="card-img" loading="lazy" width="300" height="200"
+              alt="Automate Cybersecurity Tasks with Python preview"
               src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Crect width='300' height='200' fill='%23f0f0f0'/%3E%3C/svg%3E"
               data-src="./images/20.jpg" />
           </figure>
@@ -289,7 +423,8 @@
 
         <article class="card" tabindex="0" data-title="Assets, Threats, and Vulnerabilities" data-issuer="Coursera">
           <figure class="card-figure">
-            <img class="card-img" loading="lazy" width="300" height="200" alt="Assets, Threats, and Vulnerabilities preview"
+            <img class="card-img" loading="lazy" width="300" height="200"
+              alt="Assets, Threats, and Vulnerabilities preview"
               src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Crect width='300' height='200' fill='%23f0f0f0'/%3E%3C/svg%3E"
               data-src="./images/21.jpg" />
           </figure>
@@ -302,61 +437,70 @@
         <!-- ========== Oracle Corporation ========== -->
         <article class="card" tabindex="0" data-title="Certified DevOps Professional" data-issuer="Oracle Corporation">
           <figure class="card-figure">
-            <img class="card-img" loading="lazy" width="300" height="200" alt="Certified DevOps Professional certificate preview"
+            <img class="card-img" loading="lazy" width="300" height="200"
+              alt="Certified DevOps Professional certificate preview"
               src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Crect width='300' height='200' fill='%23f0f0f0'/%3E%3C/svg%3E"
               data-src="./images/55.jpg" />
           </figure>
           <div class="card-body">
-            <h3 class="card-title">Certified DevOps Professional</h3> 
+            <h3 class="card-title">Certified DevOps Professional</h3>
             <p class="card-meta">Oracle Corporation</p>
           </div>
         </article>
 
-        <article class="card" tabindex="0" data-title="Oracle Data Platform 2025 Certified Foundations Associate" data-issuer="Oracle Corporation">
+        <article class="card" tabindex="0" data-title="Oracle Data Platform 2025 Certified Foundations Associate"
+          data-issuer="Oracle Corporation">
           <figure class="card-figure">
-            <img class="card-img" loading="lazy" width="300" height="200" alt="Certified DevOps Professional certificate preview"
+            <img class="card-img" loading="lazy" width="300" height="200"
+              alt="Certified DevOps Professional certificate preview"
               src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Crect width='300' height='200' fill='%23f0f0f0'/%3E%3C/svg%3E"
               data-src="./images/56.jpg" />
           </figure>
           <div class="card-body">
-            <h3 class="card-title">Oracle Data Platform Foundations Associate</h3> 
+            <h3 class="card-title">Oracle Data Platform Foundations Associate</h3>
             <p class="card-meta">Oracle Corporation</p>
           </div>
         </article>
 
-        <article class="card" tabindex="0" data-title="Oracle Cloud Infrastructure 2025 Certified Foundations Associate" data-issuer="Oracle Corporation">
+        <article class="card" tabindex="0" data-title="Oracle Cloud Infrastructure 2025 Certified Foundations Associate"
+          data-issuer="Oracle Corporation">
           <figure class="card-figure">
-            <img class="card-img" loading="lazy" width="300" height="200" alt="Certified DevOps Professional certificate preview"
+            <img class="card-img" loading="lazy" width="300" height="200"
+              alt="Certified DevOps Professional certificate preview"
               src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Crect width='300' height='200' fill='%23f0f0f0'/%3E%3C/svg%3E"
               data-src="./images/57.jpg" />
           </figure>
           <div class="card-body">
-            <h3 class="card-title">Oracle Cloud Infrastructure Foundations Associate</h3> 
+            <h3 class="card-title">Oracle Cloud Infrastructure Foundations Associate</h3>
             <p class="card-meta">Oracle Corporation</p>
           </div>
         </article>
 
         <!-- ========== Security Blue Team ========== -->
-        <article class="card" tabindex="0" data-title="Introduction to Dark Web Operations" data-issuer="Security Blue Team">
+        <article class="card" tabindex="0" data-title="Introduction to Dark Web Operations"
+          data-issuer="Security Blue Team">
           <figure class="card-figure">
-            <img class="card-img" loading="lazy" width="300" height="200" alt="Introduction to Dark Web Operations certificate preview"
+            <img class="card-img" loading="lazy" width="300" height="200"
+              alt="Introduction to Dark Web Operations certificate preview"
               src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Crect width='300' height='200' fill='%23f0f0f0'/%3E%3C/svg%3E"
               data-src="./images/60.jpg" />
           </figure>
           <div class="card-body">
-            <h3 class="card-title">Dark Web Operations</h3> 
+            <h3 class="card-title">Dark Web Operations</h3>
             <p class="card-meta">Security Blue Team</p>
           </div>
         </article>
 
-        <article class="card" tabindex="0" data-title="Introduction to Penetration Testing" data-issuer="Security Blue Team">
+        <article class="card" tabindex="0" data-title="Introduction to Penetration Testing"
+          data-issuer="Security Blue Team">
           <figure class="card-figure">
-            <img class="card-img" loading="lazy" width="300" height="200" alt="Introduction to Penetration Testing certificate preview"
+            <img class="card-img" loading="lazy" width="300" height="200"
+              alt="Introduction to Penetration Testing certificate preview"
               src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Crect width='300' height='200' fill='%23f0f0f0'/%3E%3C/svg%3E"
               data-src="./images/Penetesting-SBT.jpg" />
           </figure>
           <div class="card-body">
-            <h3 class="card-title">Penetration Testing</h3> 
+            <h3 class="card-title">Penetration Testing</h3>
             <p class="card-meta">Security Blue Team</p>
           </div>
         </article>
@@ -388,7 +532,8 @@
 
         <article class="card" tabindex="0" data-title="Android App Development" data-issuer="Techgyan">
           <figure class="card-figure">
-            <img class="card-img" loading="lazy" width="300" height="200" alt="Android App Development certificate preview"
+            <img class="card-img" loading="lazy" width="300" height="200"
+              alt="Android App Development certificate preview"
               src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Crect width='300' height='200' fill='%23f0f0f0'/%3E%3C/svg%3E"
               data-src="./images/3.jpg" />
           </figure>
@@ -398,7 +543,8 @@
           </div>
         </article>
 
-        <article class="card" tabindex="0" data-title="Penetration Testing" data-issuer="Techgyan Technologies in association with IIT Bombay">
+        <article class="card" tabindex="0" data-title="Penetration Testing"
+          data-issuer="Techgyan Technologies in association with IIT Bombay">
           <figure class="card-figure">
             <img class="card-img" loading="lazy" width="300" height="200" alt="Penetration Testing certificate preview"
               src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Crect width='300' height='200' fill='%23f0f0f0'/%3E%3C/svg%3E"
@@ -410,7 +556,8 @@
           </div>
         </article>
 
-        <article class="card" tabindex="0" data-title="Ethical Hacking" data-issuer="Techgyan Technologies in association with IIT Bombay">
+        <article class="card" tabindex="0" data-title="Ethical Hacking"
+          data-issuer="Techgyan Technologies in association with IIT Bombay">
           <figure class="card-figure">
             <img class="card-img" loading="lazy" width="300" height="200" alt="Ethical Hacking certificate preview"
               src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Crect width='300' height='200' fill='%23f0f0f0'/%3E%3C/svg%3E"
@@ -423,9 +570,11 @@
         </article>
 
         <!-- ========== CertiProf ========== -->
-        <article class="card" tabindex="0" data-title="Scrum Foundation Professional Certificate" data-issuer="CertiProf">
+        <article class="card" tabindex="0" data-title="Scrum Foundation Professional Certificate"
+          data-issuer="CertiProf">
           <figure class="card-figure">
-            <img class="card-img" loading="lazy" width="300" height="200" alt="Scrum Foundation Professional Certificate preview"
+            <img class="card-img" loading="lazy" width="300" height="200"
+              alt="Scrum Foundation Professional Certificate preview"
               src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Crect width='300' height='200' fill='%23f0f0f0'/%3E%3C/svg%3E"
               data-src="./images/4.jpg" />
           </figure>
@@ -435,9 +584,11 @@
           </div>
         </article>
 
-        <article class="card" tabindex="0" data-title="Cybersecurity Foundation Professional Certificate" data-issuer="CertiProf">
+        <article class="card" tabindex="0" data-title="Cybersecurity Foundation Professional Certificate"
+          data-issuer="CertiProf">
           <figure class="card-figure">
-            <img class="card-img" loading="lazy" width="300" height="200" alt="Cybersecurity Foundation Professional Certificate preview"
+            <img class="card-img" loading="lazy" width="300" height="200"
+              alt="Cybersecurity Foundation Professional Certificate preview"
               src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Crect width='300' height='200' fill='%23f0f0f0'/%3E%3C/svg%3E"
               data-src="./images/14.jpg" />
           </figure>
@@ -450,7 +601,8 @@
         <!-- ========== CFCS2R ========== -->
         <article class="card" tabindex="0" data-title="Certified Linux File System Professional" data-issuer="CFCS2R">
           <figure class="card-figure">
-            <img class="card-img" loading="lazy" width="300" height="200" alt="Certified Linux File System Professional preview"
+            <img class="card-img" loading="lazy" width="300" height="200"
+              alt="Certified Linux File System Professional preview"
               src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Crect width='300' height='200' fill='%23f0f0f0'/%3E%3C/svg%3E"
               data-src="./images/6.jpg" />
           </figure>
@@ -499,7 +651,8 @@
 
         <article class="card" tabindex="0" data-title="Beginner's Guide to Cyber Security" data-issuer="Udemy">
           <figure class="card-figure">
-            <img class="card-img" loading="lazy" width="300" height="200" alt="Beginner's Guide to Cyber Security preview"
+            <img class="card-img" loading="lazy" width="300" height="200"
+              alt="Beginner's Guide to Cyber Security preview"
               src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Crect width='300' height='200' fill='%23f0f0f0'/%3E%3C/svg%3E"
               data-src="./images/15.jpg" />
           </figure>
@@ -510,9 +663,11 @@
         </article>
 
         <!-- ========== OPSWAT Academy ========== -->
-        <article class="card" tabindex="0" data-title="Introduction to Critical Infrastructure Protection" data-issuer="OPSWAT Academy">
+        <article class="card" tabindex="0" data-title="Introduction to Critical Infrastructure Protection"
+          data-issuer="OPSWAT Academy">
           <figure class="card-figure">
-            <img class="card-img" loading="lazy" width="300" height="200" alt="Introduction to Critical Infrastructure Protection preview"
+            <img class="card-img" loading="lazy" width="300" height="200"
+              alt="Introduction to Critical Infrastructure Protection preview"
               src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Crect width='300' height='200' fill='%23f0f0f0'/%3E%3C/svg%3E"
               data-src="./images/22.png" />
           </figure>
@@ -535,9 +690,11 @@
           </div>
         </article>
 
-        <article class="card" tabindex="0" data-title="Junior Web Penetration Tester (JWPT)" data-issuer="Hackers Daddy">
+        <article class="card" tabindex="0" data-title="Junior Web Penetration Tester (JWPT)"
+          data-issuer="Hackers Daddy">
           <figure class="card-figure">
-            <img class="card-img" loading="lazy" width="300" height="200" alt="Junior Web Penetration Tester (JWPT) preview"
+            <img class="card-img" loading="lazy" width="300" height="200"
+              alt="Junior Web Penetration Tester (JWPT) preview"
               src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Crect width='300' height='200' fill='%23f0f0f0'/%3E%3C/svg%3E"
               data-src="./images/34.jpg" />
           </figure>
@@ -547,9 +704,11 @@
           </div>
         </article>
 
-        <article class="card" tabindex="0" data-title="Certified Practical Penetration Tester (CPPT)" data-issuer="Hackers Daddy">
+        <article class="card" tabindex="0" data-title="Certified Practical Penetration Tester (CPPT)"
+          data-issuer="Hackers Daddy">
           <figure class="card-figure">
-            <img class="card-img" loading="lazy" width="300" height="200" alt="Certified Practical Penetration Tester (CPPT) preview"
+            <img class="card-img" loading="lazy" width="300" height="200"
+              alt="Certified Practical Penetration Tester (CPPT) preview"
               src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Crect width='300' height='200' fill='%23f0f0f0'/%3E%3C/svg%3E"
               data-src="./images/35.jpg" />
           </figure>
@@ -586,12 +745,13 @@
 
         <article class="card" tabindex="0" data-title="Vultr Cloud Innovate Hackathon" data-issuer="geeksforgeeks">
           <figure class="card-figure">
-            <img class="card-img" loading="lazy" width="300" height="200" alt="Vultr Cloud Innovate Hackathon certificate preview"
+            <img class="card-img" loading="lazy" width="300" height="200"
+              alt="Vultr Cloud Innovate Hackathon certificate preview"
               src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Crect width='300' height='200' fill='%23f0f0f0'/%3E%3C/svg%3E"
               data-src="./images/54.jpg" />
           </figure>
           <div class="card-body">
-            <h3 class="card-title">Vultr Cloud Innovate Hackathon</h3> 
+            <h3 class="card-title">Vultr Cloud Innovate Hackathon</h3>
             <p class="card-meta">GeeksforGeeks</p>
           </div>
         </article>
@@ -673,12 +833,13 @@
         <!-- CodeChef Certificates -->
         <article class="card" tabindex="0" data-title="Accolite Coding Interview Questions" data-issuer="CodeChef">
           <figure class="card-figure">
-            <img class="card-img" loading="lazy" width="300" height="200" alt="Accolite Coding Interview Questions preview"
+            <img class="card-img" loading="lazy" width="300" height="200"
+              alt="Accolite Coding Interview Questions preview"
               src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Crect width='300' height='200' fill='%23f0f0f0'/%3E%3C/svg%3E"
               data-src="./images/37.jpg" />
           </figure>
           <div class="card-body">
-            <h3 class="card-title">Accolite Coding Interview</h3> 
+            <h3 class="card-title">Accolite Coding Interview</h3>
             <p class="card-meta">CodeChef</p>
           </div>
         </article>
@@ -690,7 +851,7 @@
               data-src="./images/83.png" />
           </figure>
           <div class="card-body">
-            <h3 class="card-title">CyberSecurity Projects</h3> 
+            <h3 class="card-title">CyberSecurity Projects</h3>
             <p class="card-meta">CodeChef</p>
           </div>
         </article>
@@ -702,11 +863,11 @@
               data-src="./images/82.png" />
           </figure>
           <div class="card-body">
-            <h3 class="card-title">Data Analysis Projects</h3> 
+            <h3 class="card-title">Data Analysis Projects</h3>
             <p class="card-meta">CodeChef</p>
           </div>
         </article>
-        
+
         <article class="card" tabindex="0" data-title="JavaScript Projects" data-issuer="CodeChef">
           <figure class="card-figure">
             <img class="card-img" loading="lazy" width="300" height="200" alt="Adobe Coding Interview Questions preview"
@@ -714,11 +875,11 @@
               data-src="./images/81.png" />
           </figure>
           <div class="card-body">
-            <h3 class="card-title">JavaScript Projects</h3> 
+            <h3 class="card-title">JavaScript Projects</h3>
             <p class="card-meta">CodeChef</p>
           </div>
         </article>
-        
+
         <article class="card" tabindex="0" data-title="Adobe Coding Interview Questions" data-issuer="CodeChef">
           <figure class="card-figure">
             <img class="card-img" loading="lazy" width="300" height="200" alt="Adobe Coding Interview Questions preview"
@@ -726,19 +887,20 @@
               data-src="./images/38.jpg" />
           </figure>
           <div class="card-body">
-            <h3 class="card-title">Adobe Coding Interview</h3> 
+            <h3 class="card-title">Adobe Coding Interview</h3>
             <p class="card-meta">CodeChef</p>
           </div>
         </article>
 
         <article class="card" tabindex="0" data-title="Amazon Coding Interview Questions" data-issuer="CodeChef">
           <figure class="card-figure">
-            <img class="card-img" loading="lazy" width="300" height="200" alt="Amazon Coding Interview Questions preview"
+            <img class="card-img" loading="lazy" width="300" height="200"
+              alt="Amazon Coding Interview Questions preview"
               src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Crect width='300' height='200' fill='%23f0f0f0'/%3E%3C/svg%3E"
               data-src="./images/39.jpg" />
           </figure>
           <div class="card-body">
-            <h3 class="card-title">Amazon Coding Interview</h3> 
+            <h3 class="card-title">Amazon Coding Interview</h3>
             <p class="card-meta">CodeChef</p>
           </div>
         </article>
@@ -750,7 +912,7 @@
               data-src="./images/40.jpg" />
           </figure>
           <div class="card-body">
-            <h3 class="card-title">Visa Interview</h3> 
+            <h3 class="card-title">Visa Interview</h3>
             <p class="card-meta">CodeChef</p>
           </div>
         </article>
@@ -762,19 +924,20 @@
               data-src="./images/41.jpg" />
           </figure>
           <div class="card-body">
-            <h3 class="card-title">TCS Codevita</h3> 
+            <h3 class="card-title">TCS Codevita</h3>
             <p class="card-meta">CodeChef</p>
           </div>
         </article>
 
         <article class="card" tabindex="0" data-title="Flipkart Coding Interview Questions" data-issuer="CodeChef">
           <figure class="card-figure">
-            <img class="card-img" loading="lazy" width="300" height="200" alt="Flipkart Coding Interview Questions preview"
+            <img class="card-img" loading="lazy" width="300" height="200"
+              alt="Flipkart Coding Interview Questions preview"
               src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Crect width='300' height='200' fill='%23f0f0f0'/%3E%3C/svg%3E"
               data-src="./images/42.jpg" />
           </figure>
           <div class="card-body">
-            <h3 class="card-title">Flipkart Coding Interview</h3> 
+            <h3 class="card-title">Flipkart Coding Interview</h3>
             <p class="card-meta">CodeChef</p>
           </div>
         </article>
@@ -786,7 +949,7 @@
               data-src="./images/43.jpg" />
           </figure>
           <div class="card-body">
-            <h3 class="card-title">Glean Coding Interview</h3> 
+            <h3 class="card-title">Glean Coding Interview</h3>
             <p class="card-meta">CodeChef</p>
           </div>
         </article>
@@ -798,55 +961,59 @@
               data-src="./images/44.jpg" />
           </figure>
           <div class="card-body">
-            <h3 class="card-title">Google Interview</h3> 
+            <h3 class="card-title">Google Interview</h3>
             <p class="card-meta">CodeChef</p>
           </div>
         </article>
 
         <article class="card" tabindex="0" data-title="Junglee Games Interview Questions" data-issuer="CodeChef">
           <figure class="card-figure">
-            <img class="card-img" loading="lazy" width="300" height="200" alt="Junglee Games Interview Questions preview"
+            <img class="card-img" loading="lazy" width="300" height="200"
+              alt="Junglee Games Interview Questions preview"
               src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Crect width='300' height='200' fill='%23f0f0f0'/%3E%3C/svg%3E"
               data-src="./images/45.jpg" />
           </figure>
           <div class="card-body">
-            <h3 class="card-title">Junglee Games Interview</h3> 
+            <h3 class="card-title">Junglee Games Interview</h3>
             <p class="card-meta">CodeChef</p>
           </div>
         </article>
 
         <article class="card" tabindex="0" data-title="Maxlinear Coding Interview Questions" data-issuer="CodeChef">
           <figure class="card-figure">
-            <img class="card-img" loading="lazy" width="300" height="200" alt="Maxlinear Coding Interview Questions preview"
+            <img class="card-img" loading="lazy" width="300" height="200"
+              alt="Maxlinear Coding Interview Questions preview"
               src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Crect width='300' height='200' fill='%23f0f0f0'/%3E%3C/svg%3E"
               data-src="./images/46.jpg" />
           </figure>
           <div class="card-body">
-            <h3 class="card-title">Maxlinear Coding Interview</h3> 
+            <h3 class="card-title">Maxlinear Coding Interview</h3>
             <p class="card-meta">CodeChef</p>
           </div>
         </article>
 
         <article class="card" tabindex="0" data-title="Microsoft Coding Interview Questions" data-issuer="CodeChef">
           <figure class="card-figure">
-            <img class="card-img" loading="lazy" width="300" height="200" alt="Microsoft Coding Interview Questions preview"
+            <img class="card-img" loading="lazy" width="300" height="200"
+              alt="Microsoft Coding Interview Questions preview"
               src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Crect width='300' height='200' fill='%23f0f0f0'/%3E%3C/svg%3E"
               data-src="./images/47.jpg" />
           </figure>
           <div class="card-body">
-            <h3 class="card-title">Microsoft Coding Interview</h3> 
+            <h3 class="card-title">Microsoft Coding Interview</h3>
             <p class="card-meta">CodeChef</p>
           </div>
         </article>
 
         <article class="card" tabindex="0" data-title="Nutanix Coding Interview Questions" data-issuer="CodeChef">
           <figure class="card-figure">
-            <img class="card-img" loading="lazy" width="300" height="200" alt="Nutanix Coding Interview Questions preview"
+            <img class="card-img" loading="lazy" width="300" height="200"
+              alt="Nutanix Coding Interview Questions preview"
               src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Crect width='300' height='200' fill='%23f0f0f0'/%3E%3C/svg%3E"
               data-src="./images/48.jpg" />
           </figure>
           <div class="card-body">
-            <h3 class="card-title">Nutanix Coding Interview</h3> 
+            <h3 class="card-title">Nutanix Coding Interview</h3>
             <p class="card-meta">CodeChef</p>
           </div>
         </article>
@@ -858,7 +1025,7 @@
               data-src="./images/49.jpg" />
           </figure>
           <div class="card-body">
-            <h3 class="card-title">PhonePe Interview</h3> 
+            <h3 class="card-title">PhonePe Interview</h3>
             <p class="card-meta">CodeChef</p>
           </div>
         </article>
@@ -870,19 +1037,20 @@
               data-src="./images/50.jpg" />
           </figure>
           <div class="card-body">
-            <h3 class="card-title">Practice Go</h3> 
+            <h3 class="card-title">Practice Go</h3>
             <p class="card-meta">CodeChef</p>
           </div>
         </article>
 
         <article class="card" tabindex="0" data-title="Python Developer Interview Questions" data-issuer="CodeChef">
           <figure class="card-figure">
-            <img class="card-img" loading="lazy" width="300" height="200" alt="Python Developer Interview Questions preview"
+            <img class="card-img" loading="lazy" width="300" height="200"
+              alt="Python Developer Interview Questions preview"
               src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Crect width='300' height='200' fill='%23f0f0f0'/%3E%3C/svg%3E"
               data-src="./images/51.jpg" />
           </figure>
           <div class="card-body">
-            <h3 class="card-title">Python Developer Interview</h3> 
+            <h3 class="card-title">Python Developer Interview</h3>
             <p class="card-meta">CodeChef</p>
           </div>
         </article>
@@ -894,7 +1062,7 @@
               data-src="./images/52.jpg" />
           </figure>
           <div class="card-body">
-            <h3 class="card-title">Python Projects</h3> 
+            <h3 class="card-title">Python Projects</h3>
             <p class="card-meta">CodeChef</p>
           </div>
         </article>
@@ -906,11 +1074,11 @@
               data-src="./images/53.jpg" />
           </figure>
           <div class="card-body">
-            <h3 class="card-title">Practice Rust</h3> 
+            <h3 class="card-title">Practice Rust</h3>
             <p class="card-meta">CodeChef</p>
           </div>
         </article>
-        
+
         <article class="card" tabindex="0" data-title="All India NCAT 2026" data-issuer="Naukri">
           <figure class="card-figure">
             <img class="card-img" loading="lazy" width="300" height="200" alt="Practice Rust preview"
@@ -918,7 +1086,7 @@
               data-src="./images/84.png" />
           </figure>
           <div class="card-body">
-            <h3 class="card-title">All India NCAT 2026</h3> 
+            <h3 class="card-title">All India NCAT 2026</h3>
             <p class="card-meta">Naukri Campus</p>
           </div>
         </article>
@@ -931,7 +1099,7 @@
               data-src="./images/ADVANCED EXCEL- ELEARNMARKETS.jpg" />
           </figure>
           <div class="card-body">
-            <h3 class="card-title">Advanced Excel Tutorial Online</h3> 
+            <h3 class="card-title">Advanced Excel Tutorial Online</h3>
             <p class="card-meta">Elearnmarkets</p>
           </div>
         </article>
@@ -943,43 +1111,45 @@
               data-src="./images/ARTIFICIAL INTELLIGENCE- ITRONIX SOUTIONS.jpg" />
           </figure>
           <div class="card-body">
-            <h3 class="card-title">Artificial Intelligence</h3> 
+            <h3 class="card-title">Artificial Intelligence</h3>
             <p class="card-meta">Itronix Solutions</p>
           </div>
         </article>
 
         <article class="card" tabindex="0" data-title="ISEA Certified Cyber Hygiene Practioner" data-issuer="ISEA">
           <figure class="card-figure">
-            <img class="card-img" loading="lazy" width="300" height="200" alt="ISEA Certified Cyber Hygiene Practioner preview"
+            <img class="card-img" loading="lazy" width="300" height="200"
+              alt="ISEA Certified Cyber Hygiene Practioner preview"
               src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Crect width='300' height='200' fill='%23f0f0f0'/%3E%3C/svg%3E"
               data-src="./images/Cyber Hygiene Practioner-ISEA_page.jpg" />
           </figure>
           <div class="card-body">
-            <h3 class="card-title">ISEA Cyber Hygiene Practioner</h3> 
+            <h3 class="card-title">ISEA Cyber Hygiene Practioner</h3>
             <p class="card-meta">ISEA - MeiTY</p>
           </div>
         </article>
 
         <article class="card" tabindex="0" data-title="Bharatiya Antariksh Hackathon 2025" data-issuer="H2S">
           <figure class="card-figure">
-            <img class="card-img" loading="lazy" width="300" height="200" alt="Bharatiya Antariksh Hackathon 2025 preview"
+            <img class="card-img" loading="lazy" width="300" height="200"
+              alt="Bharatiya Antariksh Hackathon 2025 preview"
               src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Crect width='300' height='200' fill='%23f0f0f0'/%3E%3C/svg%3E"
               data-src="./images/Hack2skill-Certificate.png" />
           </figure>
           <div class="card-body">
-            <h3 class="card-title">Bharatiya Antariksh Hackathon 2025</h3> 
+            <h3 class="card-title">Bharatiya Antariksh Hackathon 2025</h3>
             <p class="card-meta">Hack2Skill</p>
           </div>
         </article>
 
-         <article class="card" tabindex="0" data-title="Full Stack Web Development" data-issuer="30DaysCoding">
+        <article class="card" tabindex="0" data-title="Full Stack Web Development" data-issuer="30DaysCoding">
           <figure class="card-figure">
             <img class="card-img" loading="lazy" width="300" height="200" alt="Full Stack Web Development preview"
               src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Crect width='300' height='200' fill='%23f0f0f0'/%3E%3C/svg%3E"
               data-src="./images/fsd.png" />
           </figure>
           <div class="card-body">
-            <h3 class="card-title">Full Stack Web Development</h3> 
+            <h3 class="card-title">Full Stack Web Development</h3>
             <p class="card-meta">30DaysCoding</p>
           </div>
         </article>
@@ -991,7 +1161,7 @@
               data-src="./images/jd.png" />
           </figure>
           <div class="card-body">
-            <h3 class="card-title">Java Development</h3> 
+            <h3 class="card-title">Java Development</h3>
             <p class="card-meta">30DaysCoding</p>
           </div>
         </article>
@@ -1003,43 +1173,48 @@
               data-src="./images/62.png" />
           </figure>
           <div class="card-body">
-            <h3 class="card-title">Data Structures and Algorithms</h3> 
+            <h3 class="card-title">Data Structures and Algorithms</h3>
             <p class="card-meta">30DaysCoding</p>
           </div>
         </article>
 
-        <article class="card" tabindex="0" data-title="Masterclass in Python Programming" data-issuer="Pantech eLearning">
+        <article class="card" tabindex="0" data-title="Masterclass in Python Programming"
+          data-issuer="Pantech eLearning">
           <figure class="card-figure">
-            <img class="card-img" loading="lazy" width="300" height="200" alt="Masterclass in Python Programming preview"
+            <img class="card-img" loading="lazy" width="300" height="200"
+              alt="Masterclass in Python Programming preview"
               src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Crect width='300' height='200' fill='%23f0f0f0'/%3E%3C/svg%3E"
               data-src="./images/PYTHON PROGRAMMING - PANTECH E-LEARNING_page.jpg" />
           </figure>
           <div class="card-body">
-            <h3 class="card-title">Masterclass in Python Programming</h3> 
+            <h3 class="card-title">Masterclass in Python Programming</h3>
             <p class="card-meta">Pantech eLearning</p>
           </div>
         </article>
 
-         <article class="card" tabindex="0" data-title="Masterclass in Full Stack Development" data-issuer="Pantech eLearning">
+        <article class="card" tabindex="0" data-title="Masterclass in Full Stack Development"
+          data-issuer="Pantech eLearning">
           <figure class="card-figure">
-            <img class="card-img" loading="lazy" width="300" height="200" alt="Masterclass in Full Stack Development preview"
+            <img class="card-img" loading="lazy" width="300" height="200"
+              alt="Masterclass in Full Stack Development preview"
               src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Crect width='300' height='200' fill='%23f0f0f0'/%3E%3C/svg%3E"
               data-src="./images/FULL STACK WEB DEVELOPMENT (REACTJS) - PANTECH_page.jpg" />
           </figure>
           <div class="card-body">
-            <h3 class="card-title">Full Stack Development</h3> 
+            <h3 class="card-title">Full Stack Development</h3>
             <p class="card-meta">Pantech eLearning</p>
           </div>
         </article>
 
         <article class="card" tabindex="0" data-title="Quick and Easy Guide to Microsoft Word" data-issuer="Eduonix">
           <figure class="card-figure">
-            <img class="card-img" loading="lazy" width="300" height="200" alt="Quick and Easy Guide to Microsoft Word preview"
+            <img class="card-img" loading="lazy" width="300" height="200"
+              alt="Quick and Easy Guide to Microsoft Word preview"
               src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Crect width='300' height='200' fill='%23f0f0f0'/%3E%3C/svg%3E"
               data-src="./images/QUICK AND EASY GUIDE TO MS WORD-EDUONIX_page.jpg" />
           </figure>
           <div class="card-body">
-            <h3 class="card-title">Quick and Easy Guide to Microsoft Word</h3> 
+            <h3 class="card-title">Quick and Easy Guide to Microsoft Word</h3>
             <p class="card-meta">Eduonix</p>
           </div>
         </article>
@@ -1051,7 +1226,7 @@
               data-src="./images/SQL (Basic) - Hackerrrank_page.jpg" />
           </figure>
           <div class="card-body">
-            <h3 class="card-title">SQL (Basic)</h3> 
+            <h3 class="card-title">SQL (Basic)</h3>
             <p class="card-meta">HackerRank</p>
           </div>
         </article>
@@ -1063,19 +1238,21 @@
               data-src="./images/STOCK MARKET- ELEARNMARKETS_page.jpg" />
           </figure>
           <div class="card-body">
-            <h3 class="card-title">Stock Market Made Easy</h3> 
+            <h3 class="card-title">Stock Market Made Easy</h3>
             <p class="card-meta">Elearnmarkets</p>
           </div>
         </article>
 
-        <article class="card" tabindex="0" data-title="The Story of Photoelectric Effect" data-issuer="Indian Institute of Technology Kanpur">
+        <article class="card" tabindex="0" data-title="The Story of Photoelectric Effect"
+          data-issuer="Indian Institute of Technology Kanpur">
           <figure class="card-figure">
-            <img class="card-img" loading="lazy" width="300" height="200" alt="The Story of Photoelectric Effect preview"
+            <img class="card-img" loading="lazy" width="300" height="200"
+              alt="The Story of Photoelectric Effect preview"
               src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Crect width='300' height='200' fill='%23f0f0f0'/%3E%3C/svg%3E"
               data-src="./images/THE STORY OF PHOTOELECTRIC EFFECT-IITK_page.jpg" />
           </figure>
           <div class="card-body">
-            <h3 class="card-title">The Story of Photoelectric Effect</h3> 
+            <h3 class="card-title">The Story of Photoelectric Effect</h3>
             <p class="card-meta">Indian Institute of Technology Kanpur</p>
           </div>
         </article>
@@ -1083,8 +1260,9 @@
       </section>
 
       <!-- LOR gallery - organized: Das Sir first, then categorized by field -->
+
       <section class="gallery hidden" id="gallery-lor" aria-hidden="true">
-        
+
         <!-- ========== DAS SIR - Both LORs first ========== -->
         <article class="card" data-type="lor" tabindex="0" data-title="Das Sir - Job LOR" data-issuer="">
           <figure class="card-figure">
@@ -1096,7 +1274,7 @@
             <h3 class="card-title">Das Sir - Job LOR (IIC)</h3>
           </div>
         </article>
-        
+
         <article class="card" data-type="lor" tabindex="0" data-title="Ph.D." data-issuer="Prof. S. Mehta">
           <figure class="card-figure">
             <img class="card-img" loading="lazy" width="300" height="200" alt=""
@@ -1109,7 +1287,8 @@
         </article>
 
         <!-- ========== WEB DEVELOPMENT LORs (grouped together) ========== -->
-        <article class="card" data-type="lor" tabindex="0" data-title="Frontend Web Development" data-issuer="Prof. K. Desai">
+        <article class="card" data-type="lor" tabindex="0" data-title="Frontend Web Development"
+          data-issuer="Prof. K. Desai">
           <figure class="card-figure">
             <img class="card-img" loading="lazy" width="300" height="200" alt=""
               src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Crect width='300' height='200' fill='%23f0f0f0'/%3E%3C/svg%3E"
@@ -1120,7 +1299,8 @@
           </div>
         </article>
 
-        <article class="card" data-type="lor" tabindex="0" data-title="Full Stack Development" data-issuer="Dr. R. Gupta">
+        <article class="card" data-type="lor" tabindex="0" data-title="Full Stack Development"
+          data-issuer="Dr. R. Gupta">
           <figure class="card-figure">
             <img class="card-img" loading="lazy" width="300" height="200" alt=""
               src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Crect width='300' height='200' fill='%23f0f0f0'/%3E%3C/svg%3E"
@@ -1131,7 +1311,8 @@
           </div>
         </article>
 
-        <article class="card" data-type="lor" tabindex="0" data-title="Full Stack Development" data-issuer="Dept. Chair">
+        <article class="card" data-type="lor" tabindex="0" data-title="Full Stack Development"
+          data-issuer="Dept. Chair">
           <figure class="card-figure">
             <img class="card-img" loading="lazy" width="300" height="200" alt=""
               src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Crect width='300' height='200' fill='%23f0f0f0'/%3E%3C/svg%3E"
@@ -1176,7 +1357,8 @@
           </div>
         </article>
 
-        <article class="card" data-type="lor" tabindex="0" data-title="Cyber Security" data-issuer="Team Lead, Acme Corp">
+        <article class="card" data-type="lor" tabindex="0" data-title="Cyber Security"
+          data-issuer="Team Lead, Acme Corp">
           <figure class="card-figure">
             <img class="card-img" loading="lazy" width="300" height="200" alt=""
               src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Crect width='300' height='200' fill='%23f0f0f0'/%3E%3C/svg%3E"
@@ -1187,7 +1369,8 @@
           </div>
         </article>
 
-        <article class="card" data-type="lor" tabindex="0" data-title="Ethical Hacking & Cyber Security" data-issuer="Community Org">
+        <article class="card" data-type="lor" tabindex="0" data-title="Ethical Hacking & Cyber Security"
+          data-issuer="Community Org">
           <figure class="card-figure">
             <img class="card-img" loading="lazy" width="300" height="200" alt=""
               src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Crect width='300' height='200' fill='%23f0f0f0'/%3E%3C/svg%3E"
@@ -1199,7 +1382,8 @@
         </article>
 
         <!-- ========== OTHER LORs (internships, data, etc.) ========== -->
-        <article class="card" data-type="lor" tabindex="0" data-title="ISP - Internshala Student Program" data-issuer="Prof. S. Mehta">
+        <article class="card" data-type="lor" tabindex="0" data-title="ISP - Internshala Student Program"
+          data-issuer="Prof. S. Mehta">
           <figure class="card-figure">
             <img class="card-img" loading="lazy" width="300" height="200" alt=""
               src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Crect width='300' height='200' fill='%23f0f0f0'/%3E%3C/svg%3E"
@@ -1254,7 +1438,8 @@
           </div>
         </article>
 
-        <article class="card" data-type="lor" tabindex="0" data-title="Fundraising Coordinator" data-issuer="Training Manager">
+        <article class="card" data-type="lor" tabindex="0" data-title="Fundraising Coordinator"
+          data-issuer="Training Manager">
           <figure class="card-figure">
             <img class="card-img" loading="lazy" width="300" height="200" alt=""
               src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Crect width='300' height='200' fill='%23f0f0f0'/%3E%3C/svg%3E"
@@ -1276,7 +1461,8 @@
           </div>
         </article>
 
-        <article class="card" data-type="lor" tabindex="0" data-title="Operations Intern" data-issuer="Engineering Manager">
+        <article class="card" data-type="lor" tabindex="0" data-title="Operations Intern"
+          data-issuer="Engineering Manager">
           <figure class="card-figure">
             <img class="card-img" loading="lazy" width="300" height="200" alt=""
               src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Crect width='300' height='200' fill='%23f0f0f0'/%3E%3C/svg%3E"
@@ -1294,11 +1480,12 @@
               data-src="./images/LOR - VCIS Internship_page-0001.jpg" />
           </figure>
           <div class="card-body">
-            <h3 class="card-title">VCIS - Full Time (B.Sc.)</h3> 
+            <h3 class="card-title">VCIS - Full Time (B.Sc.)</h3>
           </div>
         </article>
 
-        <article class="card" data-type="lor" tabindex="0" data-title="VCIS - Part Time" data-issuer="Program Coordinator">
+        <article class="card" data-type="lor" tabindex="0" data-title="VCIS - Part Time"
+          data-issuer="Program Coordinator">
           <figure class="card-figure">
             <img class="card-img" loading="lazy" width="300" height="200" alt=""
               src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Crect width='300' height='200' fill='%23f0f0f0'/%3E%3C/svg%3E"
@@ -1310,36 +1497,94 @@
         </article>
 
       </section>
+
     </main>
 
-    <!-- Footer: professional copyright -->
-    <footer class="site-footer" role="contentinfo" aria-label="Site footer">
-      <div class="site-footer-inner">
-        <p class="copyright">
-          © <span class="year"></span> Lakshay Dhoundiyal — All rights reserved.
+    <!-- Professional Modern Footer -->
+    <footer class="site-footer" role="contentinfo">
+      <div class="container footer-content">
+        <div class="footer-brand">Lakshay Dhoundiyal</div>
+        <p class="footer-desc">
+          Cybersecurity Researcher &amp; Software Engineer.
         </p>
-        <p class="footer-note">Designed &amp; developed by Lakshay Dhoundiyal</p>
+        <div class="footer-copyright">
+          © <span id="currentYear"></span> Lakshay Dhoundiyal. All credentials, badges, and accreditations belong to
+          their respective certifying organizations.
+        </div>
       </div>
     </footer>
   </div>
 
+  <!-- Upgraded Lightbox Modal Viewer -->
   <div class="modal hidden" id="imageModal" aria-hidden="true" role="dialog" aria-modal="true">
     <div class="modal-backdrop" data-close="true"></div>
     <div class="modal-dialog" role="document">
+      <!-- Modal Header -->
+      <div class="modal-header-bar">
+        <div class="modal-title-group">
+          <h2 id="modalTitleText" class="modal-title-text">Certificate Viewer</h2>
+          <span id="modalIssuerBadge" class="modal-issuer-badge">Verified Issuer</span>
+        </div>
+        <div class="modal-header-actions">
+          <span id="modalNavCounter" class="modal-nav-counter">1 / 1</span>
+          <button id="modalZoomBtn" class="modal-action-btn" type="button" title="Toggle zoom"
+            aria-label="Toggle image zoom">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              <line x1="11" y1="8" x2="11" y2="14"></line>
+              <line x1="8" y1="11" x2="14" y2="11"></line>
+            </svg>
+          </button>
+          <button id="downloadBtn" class="modal-action-btn download-btn" type="button" title="Download certificate"
+            aria-label="Download image">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+          </button>
+          <button id="modalClose" class="modal-action-btn" type="button" title="Close viewer (Esc)"
+            aria-label="Close modal">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+              stroke-linecap="round" stroke-linejoin="round">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Modal Content & Navigation -->
       <div class="image-viewer">
-        <button type="button" class="modal-close" id="modalClose" aria-label="Close">×</button>
-        <img id="modalImg" alt="Certificate full view" />
-        <button class="download-btn" id="downloadBtn" aria-label="Download certificate">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-            <polyline points="7 10 12 15 17 10"></polyline>
-            <line x1="12" y1="15" x2="12" y2="3"></line>
+        <button id="modalPrevBtn" class="modal-nav-arrow modal-prev-btn" type="button" aria-label="Previous credential">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="15 18 9 12 15 6"></polyline>
+          </svg>
+        </button>
+        <img id="modalImg" alt="Credential full view" />
+        <button id="modalNextBtn" class="modal-nav-arrow modal-next-btn" type="button" aria-label="Next credential">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6"></polyline>
           </svg>
         </button>
       </div>
     </div>
   </div>
 
+  <!-- Floating Back to Top Button -->
+  <button id="backToTopBtn" class="back-to-top-btn" type="button" aria-label="Scroll back to top">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+      stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
   <script src="script.js" defer></script>
 </body>
+
 </html>
